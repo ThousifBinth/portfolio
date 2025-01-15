@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --light-bg: #ffffff;
+            --light-text: #000000;
+            --dark-bg: #121212;
+            --dark-text: #ffffff;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+
+        .light-mode {
+            background-color: var(--light-bg) !important;
+            color: var(--light-text) !important;
+        }
+
+        .dark-mode {
+            background-color: var(--dark-bg) !important;
+            color: var(--dark-text) !important;
+        }
+
+        .mode-toggle {
+            cursor: pointer;
+        }
+
+        #cv {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-light mode-toggle ms-3">light mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="container py-5 text-center">
+        <h1>Hi, I'm Thousif Bindia S</h1>
+        <p>A passionate Python Full Stack Developer</p>
+    </section>
+
+    <section id="about" class="container py-5">
+        <h2 style="text-decoration: underline;">About Me</h2>
+        <div class="text1">Enthusiastic and motivated entry-level web developer with a solid foundation in HTML, CSS, and JavaScript. Eager to apply strong problem-solving skills and a zeal for web design to create engaging and responsive user experiences. Looking to contribute to a dynamic team while continuously learning and growing in a fast-paced environment.</div>
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <h3>Personal Details</h3>
+                <ul>
+                    <li>Name: Thousif Bindia S</li>
+                    <li>Full Stack Python Developer</li>
+                    <li>Graduation:B.tech ECE </li>
+                    <li>City: Palakkad,Kerala </li>
+                    <li>Country: India </li>
+                    <li>Email:thou.ceez3030@gmail.com </li>
+                    <li> Phone:6238686123 </li>
+                    <li><a href="https://www.linkedin.com/in/thousifbindia/" style="color: #fff;">LinkedIn</a> </li>
+                    <li><a href=" https://github.com/ThousifBinth" style="color: #fff;">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Django & Django REST Framework</li>
+                    <li>HTML, CSS, SASS, JavaScript</li>
+                    <li>React</li>
+                    <li>PostgreSQL</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
+        
+            <div class="col-md-4">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Full Stack Web Development with Python and Django - IPCS Global 2024 Nov</li>
+                    <li>Python Data Structures and Algotithms - Udemy 2025 Jan</li>
+                    <li>Python Internship Certificate - Pantech Solutions 2024 Oct</li>
+                    <li>PostgreSQL Database Management for Beginners - Udemy 2024 Nov </li>
+                    
+                    <li>Data Analyst Bootcamp - Pantech Solutions 2024 Nov. </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="row">
+                <div class="col-md-6">
+                    <button id="view-cv-btn" class="btn mt-3" style="background-color: yellowgreen;">View CV</button>
+                    <div id="cv" class="mt-3">
+                        <img src="cv1.png" alt="CV" class="img-fluid">
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <section id="services" class="container py-5">
+        <h2 style="text-decoration: underline;">Services</h2>
+        <div class="row mt-5">
+            <div class="col-md-3 mb-4">
+                <h4>Frontend Developer</h4>
+                <p>Building responsive and user-friendly interfaces.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h4>Backend Developer</h4>
+                <p>Developing robust server-side logic and APIs.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h4>Full Stack Developer</h4>
+                <p>Combining frontend and backend development skills.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h4>Database Administrator</h4>
+                <p>Managing and optimizing database systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="container py-5">
+        <h2 style="text-decoration: underline;">Portfolio</h2>
+        <div class="row mt-5">
+            <div class="col-md-4 mb-4">
+                <h4>To-Do-List</h4>
+                <p>Technologies: Django REST Framework, React, Axios, PostgreSQL
+                    Built a task management app with CRUD functionality, a RESTful API,
+                    PostgreSQL for data storage, and a responsive React front-end.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4>Job Portal Website</h4>
+                <p> Technologies: Django, yth
+                    on, HTML, CSS, JavaScript, PostgreSQL 
+                Designed and developed a full stack portal featuring job listings,
+            user-profiles and an admin dashboar for streamlined user management.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4>Weather Application </h4>
+                <p>Technologies: Python, Django, Requests, REST API
+                    Created a responsive weather application leveraging real-time data from third-party APIs with user-friendly input validation.
+                  </p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4>E-Commerce Website </h4>
+                    <p>Technologies: Django, Python, HTML, CSS, JavaScript, PostgreSQL
+                        Built a robust e-commerce platform incorporating user authentication, a shopping cart, and secure checkout functionality.
+                      </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Event Management Website </h4>
+                    <p> Technologies: HTML, CSS, SASS, JavaScript, Bootstrap
+                        Developed an interactive, responsive front-end interface featuring modern UI components for seamless event management.
+                      </p>
+                </div>
+                
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container py-5">
+        <h2 style="text-decoration: underline;">Contact Me</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </section>
+
+    <script>
+        const toggleButton = document.querySelector('.mode-toggle');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            body.classList.toggle('dark-mode');
+
+            if (body.classList.contains('light-mode')) {
+                toggleButton.textContent = 'Switch to Dark Mode';
+            } else {
+                toggleButton.textContent = 'Switch to Light Mode';
+            }
+        });
+
+        document.getElementById('view-cv-btn').addEventListener('click', () => {
+            const cv = document.getElementById('cv');
+            cv.style.display = cv.style.display === 'none' || cv.style.display === '' ? 'block' : 'none';
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
